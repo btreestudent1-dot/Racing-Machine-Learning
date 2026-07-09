@@ -69,5 +69,17 @@ function computeFitness(car) {
   // YOUR CODE GOES HERE
   // Replace this with your fitness rules.
 
-  return 0;
+  let progressScore = car.progress * 1.5;
+
+  let lapBonus = car.lap + 50;
+
+  let timeBonus = car.timeAlive * 1.2;
+
+  let grassPenalty = car.grassTime * 1.5;
+
+  let speedScore = car.avgSpeed * 10;
+  
+  
+
+  return progressScore + lapBonus + timeBonus + speedScore - grassPenalty;
 }

@@ -27,19 +27,19 @@ const CANVAS_H = 460;
 // ============================================================
 var CTRL_POINTS = [
   {x: 400, y: 200},   // 0: start / finish  ← middle of top straight
-  {x: 145, y: 215},   // 1: hairpin approach
-  {x: 82,  y: 268},   // 2: hairpin apex
-  {x: 98,  y: 340},   // 3: hairpin exit
-  {x: 205, y: 392},   // 4: bottom left turn
-  {x: 350, y: 410},   // 5: bottom straight
+  {x: 200, y: 200},   // 1: hairpin approach
+  {x: 150,  y: 100},   // 2: hairpin apex
+  {x: 100,  y: 150},   // 3: hairpin exit
+  {x: 125, y: 300},   // 4: bottom left turn
+  {x: 200, y: 300},   // 5: bottom straight
   {x: 470, y: 402},   // 6: chicane entry
   {x: 562, y: 372},   // 7: chicane right
   {x: 518, y: 308},   // 8: chicane left
-  {x: 608, y: 268},   // 9: final corner
+  {x: 668, y: 268},   // 9: final corner
   {x: 620, y: 220},   // 10: top right kink
 ];
 
-var TRACK_WIDTH = 66;  // visible track width in pixels
+var TRACK_WIDTH = 55;  // visible track width in pixels
 
 // Generate smooth centerline via Catmull-Rom spline
 function generateCenterline(ctrlPts, segmentsPerPoint) {
